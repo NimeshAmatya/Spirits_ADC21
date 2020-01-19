@@ -11,3 +11,10 @@ class Register(models.Model):
 
 	def __str__(self):
 		return self.FirstName
+
+class Login(models.Model):
+	UserName = models.CharField(max_length=20)
+	Password = models.CharField(max_length=10)
+
+	def __str__(self):
+		return self.UserName
