@@ -5,6 +5,12 @@ class RegistrationForm(forms.ModelForm):
 	class Meta:
 		model = Register
 		
+		widget ={
+			'Password':forms.PasswordInput(),
+			'ConfirmPassword':forms.PasswordInput()
+
+		}
+
 		fields = (
 			'FirstName',
 			'LastName', 
@@ -13,11 +19,10 @@ class RegistrationForm(forms.ModelForm):
 			'Password',
 			'ConfirmPassword'
 		)
-		widget ={
-			'Password':forms.PasswordInput(),
-			'ConfirmPassword':forms.PasswordInput()
 
-		}
+		
+				
+		
 class LoginForm(forms.ModelForm):
 	class Meta:
 		model = Login
