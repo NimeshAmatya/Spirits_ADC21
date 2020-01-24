@@ -7,5 +7,6 @@ urlpatterns=[
 	#path('post/<int:pk>/',PostDetailView.as_view(), name='post-detail'),
 	#path('login/', views.about, name='roomfinder-login'),
 	path('addpost/', views.add, name='addpost'),
+	path('photo/<int:pk>/',views.delete, name="delete"),
 ]
 

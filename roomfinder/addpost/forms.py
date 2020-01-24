@@ -5,3 +5,4 @@ class AddForm(forms.ModelForm):
 	class Meta:
 		model = Add
 		fields = ('Location','pdf','Price')
+
