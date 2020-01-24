@@ -1,12 +1,6 @@
-from django.shortcuts import render, redirect
-#from django.views.generic import ListView, DetailView
-from .models import Add
-from .forms import AddForm
-from django.contrib import messages
+from django.shortcuts import render
 
 # Create your views here.
-
-
 
 def add(request):
 	form = AddForm()
@@ -34,5 +28,4 @@ def delete(request, pk):
 	photo.delete()
 	return redirect('start:home')
 		
-
 
