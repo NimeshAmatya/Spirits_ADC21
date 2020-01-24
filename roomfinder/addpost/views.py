@@ -16,8 +16,18 @@ def add(request):
 			form.save()
 			return redirect('start:home')
 
-	messages.info(request, 'Your post has been uploaded.')
 	return render(request,"addpost/addpost.html",{"form":form})	
+
+def roomlist(request):
+	add = Add.objects.all()
+
+	query = ""
+	if request.GET:
+		query  = request.GET['q']
+
+		add = get_data_queryset(str(query))
+
+	return render(request, "addpost/roomlist.html", {"adds":add})  
 
 def delete(request, pk):
 	photo = Add.objects.get(pk = pk)

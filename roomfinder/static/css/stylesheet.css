@@ -1,0 +1,13 @@
+*{
+	padding:10px;
+}
+#newHouse{
+	color: white;
+	width: 200px;
+	padding: 10px;
+	background: red;
+	border-radius: 25%;
+}
+#houserent{
+	color: red;
+}
