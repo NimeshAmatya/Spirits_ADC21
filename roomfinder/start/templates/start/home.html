@@ -1,10 +1,88 @@
-
+{% load static %}
 
 
 {% include "start/navbar.html" %}
-
 {% block content %}
-	
-	<h1>This is home page.</h1>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<div class="container">
+		<h2>New House</h2>
+		<div class="row">
+			<div class="col3">
+				<div class="product-top">
+					<img src="{% static 'roomfinder/images/house_1.jpg' %}" width="250px" height="250px">
+					<h3>Rs. 10000</h3>
+                    
+				</div>
+                <div class="product-bottom">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3 id="houserent">House for Rent</h3>
+                    <h5>Hattiban,Lalitpur</h5>
+
+                </div>
+
+
+                <div class="col3">
+				<div class="product-top">
+					<img src="{% static 'roomfinder/images/house_2.jpg' %}" width="250px" height="250px">
+					<h3>Rs. 7000</h3>
+
+				</div>
+                <div class="product-bottom">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3 id="houserent">House for Rent</h3>
+                    <h5>Jhamsikhel,Lalitpur</h5>
+
+                </div>
+
+
+
+                 <div class="col3">
+				<div class="product-top">
+					<img src="{% static 'roomfinder/images/house_3.jpg' %}" width="250px" height="250px">
+					<h3>Rs. 20000</h3>
+
+				</div>
+                <div class="product-bottom">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <h3 id="houserent">House for Rent</h3>
+                    <h5>Sanepa,Lalitpur</h5>
+
+                </div>
+
+
+
+                <div class="col3">
+				<div class="product-top">
+					<img src="{% static 'roomfinder/images/house_4.jpg' %}" width="250px" height="250px">
+					<h3>Rs. 1500</h3>
+
+				</div>
+                <div class="product-bottom">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3 id="houserent">House for Rent</h3>
+                    <h5>Bakhundol,Lalitpur</h5>
+
+                </div>
+			</div>
+		</div>
+	</div>
 	
 {% endblock %}
